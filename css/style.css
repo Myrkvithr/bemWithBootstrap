@@ -72,6 +72,7 @@ ul, li {
 .button_full:hover {
     border: 2px dotted #ffffff;
     background: #006157;
+    cursor: pointer;
 }
 
 /* О нас */
@@ -91,12 +92,65 @@ ul, li {
 .about__text {
     font-size: 15px;
     margin-bottom: 110px;
-    color: #212121;
+
 }
 
 .about__h3 {
     font-family: "Open Sans Semibold";
     font-size: 20px;
-    margin: 30px;
-    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+/* Наши услуги */
+.services {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #212121;
+    background: #e4fdf9;
+    text-align: center;
+}
+
+.our-card {
+    background: #ffffff;
+    padding: 50px 40px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.our-card:hover {
+    background: #00897b;
+    color: #ffffff;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.icon {
+    font-size: 60px;
+    transition: 0.3s;
+}
+
+.our-card:hover .icon {
+    color: #ffffff;
+}
+
+.our-card:hover .button-services {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.button-services {
+    color: #212121;
+    text-transform: uppercase;
+    border: 1px solid #212121;
+    padding: 14px 12px 14px;
+    background: transparent;
+    font-family: "Open Sans Semibold";
+    transition: 0.3s;
+}
+
+.our-card__text {
+    font-size: 15px;
+    margin-bottom: 60px;
 }
