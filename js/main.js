@@ -1,7 +1,7 @@
-$ (document).ready(function() {
+$(document).ready(function () {
 
     $('.button[filter]').click(function () {
-        if($(this).attr('val') == 'off') {
+        if ($(this).attr('val') == 'off') {
             $('.button[filter]').attr('val', 'off').removeClass('focused');
             $(this).attr('val', 'on').addClass('focused');
             $('.filter > div').hide(300);
@@ -13,6 +13,14 @@ $ (document).ready(function() {
             }
 
         }
-    })
+    });
+
+
+    /* Слайдер */
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
 
 });
