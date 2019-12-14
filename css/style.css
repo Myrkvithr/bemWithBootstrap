@@ -286,6 +286,9 @@ div[filter]:hover .text {
     border: none;
 }
 
+
+
+
 /* Команда */
 
 .team {
@@ -297,18 +300,26 @@ div[filter]:hover .text {
 
 }
 
-.team h4 {
-    font-size: 20px;
-    font-family: "Open Sans Semibold";
+.myslide {
+    justify-content: center;
 }
 
-.team p {
+.myslide h4 {
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: "Open Sans Semibold";
+
+
+}
+
+.myslide p {
     font-size: 15px;
     margin-bottom: 30px;
 }
 
 .icons {
     display: flex;
+    align-content: center;
     justify-content: center;
 }
 
@@ -332,37 +343,22 @@ div[filter]:hover .text {
     color: #ffffff;
 }
 
-.team img {
+.myslide img {
     margin: 0 auto;
-    min-width: 340px;
+    max-width: 340px;
 }
 
-.multiple-items {
-    margin-top: 125px;
-}
 
-/*.dots-style {
-    margin-top: 115px;
-    display: flex;
-    justify-content: center;
-}
-*/
-.dots-style button {
-    background-color: #00897b;
-    border: none;
-    border-radius: 50%;
-    font-size: 0;
-    height: 15px;
-    width: 15px;
-    margin: 5px;
-}
 
-.dots-style li[class='slick-active'] button{
-    background: #3949ab;
+/* -------------------------- */
+/* --------------------------- */
 
-}
 
 /* Блог */
+.blog-item {
+    width: 48%;
+}
+
 .left > div:first-child {
     order: 1;
 }
@@ -425,6 +421,12 @@ div[filter]:hover .text {
     background: #00897b;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+.blog__button:hover {
+    color: #212121;
+    background: transparent;
+    border: 2px solid #00897b;
 }
 
 /* Подвал */
@@ -492,11 +494,13 @@ div[filter]:hover .text {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #212121;
-    padding: 20px 80px;
+    padding: 20px 90px;
     border-radius: 10px;
     border: none;
     transform: 0.3s;
 }
+
+
 
 .footer button:hover {
     opacity: 0.6;
