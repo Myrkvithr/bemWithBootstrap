@@ -96,15 +96,17 @@
     -webkit-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
 }
+
+@media screen and (max-width: 480px) {
+    .lSSlideOuter .lSPager.lSpg > li {
+        margin-top: 10px;
+    }
+}
+
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
     background-color: #3949ab;
 }
-.lSSlideOuter .media {
-    opacity: 0.8;
-}
-.lSSlideOuter .media.active {
-    opacity: 1;
-}
+
 /* End of pager */
 
 
